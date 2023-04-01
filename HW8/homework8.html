@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+<body>
+<h1>Homework 8: Geoprocessing Analysis</h1>
+<h2>Nea Strawn</h2>
+<br>
+<a href="./HW8.png">
+    <img src="./HW8.png" alt="CAFOs in the Upper Central Part of NC" width='500px'>
+</a>
+<br>
+<h3>The question I hoped to answer with this map is the distance of Concentrated Animal Feeding Operations near Orange and Durham county. CAFOs are a large industry in North Carolina. 
+    Most are concentrated in Eastern NC. However, I wanted to stay more local. The map depicts the distance of registerd CAFOs from major waterways in this county cluster. 
+    The waste produced by CAFOs typically runs off into nearby waterways, even with proper treatment meathods. This can severely impact nearby communities and ecosystems. </h3>
+<br>
+    <h2>Method</h2>
+<h3>1. I found shapefiles for North Carolina counties, CAFOs located in NC, and major NC waterways (data sources located below). I then reprojected all data into 6543.</h3>
+<h3>2. I then used the intersection tool on QGIS to create a dataset with selected counties. Those being: Alamance, Caswell, Chatham, Durham, Franklin, Granville, Guildford, Orange, Person, Randolph, Rockingham, Vance, Wake, and Warren.</h3>
+<h3>3. I used the intersection tool again to reduce the CAFO and waterways data within the selected region.</h3>
+<h3>4. From there I created two buffer, 1 mile and 2 miles, around the CAFOs.</h3>
+<br>
+<br>
+<h2>Data Sources</h2>
+<a href="https://www.nconemap.gov/datasets/9728285994804c8b9f20ce58bae45899_0/explore?location=35.912966%2C-78.500897%2C8.27">NC OneMap: North Carolina Counties</a>
+<a href="https://data-ncdenr.opendata.arcgis.com/datasets/b4b0eb98084f4260acc3224970443f5c_0/explore?location=35.501310%2C-77.788317%2C8.69&showTable=true">NC OneMap: CAFOs in North Carolina</a>
+<a href="https://www.nconemap.gov/datasets/nconemap::major-hydrography-streams-rivers/about">NC OneMap: Waterways in North Carolina</a>
